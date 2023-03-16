@@ -1,0 +1,28 @@
+body{
+    background-color: dimgrey;
+    
+}
+ul :hover{
+    color: beige;
+    text-decoration: underline;
+
+    
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+footer{
+    color: azure;
+    text-align: center;
+    background-color: black;
+    padding: 2px;
+    
+}
+.sla{
+    background-color: lightslategray;
+}
+a:visited{
+    color: red;
+}

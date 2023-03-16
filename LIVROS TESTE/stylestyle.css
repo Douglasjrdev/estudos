@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'manu';
+    src: url("CHUNKY\ HEART\ DECORATIVE.otf") format('opentype');
+    font-family:'cali';
+    src: url('The\ Queen.otf') format('opentype');
+    
+    
+}
+body{
+    
+    background-color: lightslategray;
+}
+.principal{
+    font-size: 3em;
+    font-family: manu;
+    text-align: center;
+    background-color: gray;
+    
+}
+p{
+    font-family:cali;
+    
+    font-size: 1.30em;
+}
