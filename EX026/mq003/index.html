@@ -6,10 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /*RETRATO*/
+
        
         *{
     margin: 0px;
     padding: 0px;
+}
+
+@media screen and (orientation:landscape) {
+    body{
+        background: url(ft/cev-landscape.jpg);
+        background-position: left bottom;
+        background-size: contain;
+    }
+
+    
+}
+@media screen and (orientation:portrait) {
+    body{
+    background: url(ft/cev-portrait.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    }
+    
 }
 
 body{
@@ -27,22 +47,8 @@ h1{
     padding: 10px;
 }
 
-@media screen and(orientation:landscape) {
-    body{
-        background: url(ft/cev-landscape.jpg);
-        background-position: center bottom;
-    }
 
-    
-}
-/*RETRATO*/
-@media screen and(orientation:portrait) {
-    body{
-    background: url(../ft/cev-portrait.jpg);
-    background-position: center bottom;
-}
-    
-}
+
     </style>
     
 </head>
