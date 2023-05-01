@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        label span{
+            width: 60px;
+            height: 30px;
+            border: 1px solid rgb(0, 0, 0);
+            display: inline-block;
+            border-radius: 10px;  
+            background-color: rgb(255, 255, 255);
+            
+            
+        }
+        label{
+            margin-right: 10px;
+        }
+        label input:focus + span{
+            border: 1px solid rgb(162, 20, 20);
+            
+        }
+        label span::after{
+            content: '';
+            display:block;
+            background-color: rgb(255, 0, 0);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin: 5px;
+            transition: all .2s ease-in-out;
+        }
+        label input:checked + span::after{
+            transform: translateX(30px);
+            background-color: green;
+        }
+        input{
+           opacity: 0;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+        
+       
+        
+       
+       
+    </style>
+    <title>CheckBox</title>
+</head>
+<body>
+    <label>
+        <input type="checkbox">
+        <span></span>
+        <b>POLÍTICA</b>
+    </label>
+
+       
+    
+
+    <label>
+        <input type="checkbox">
+        <span></span>
+        <b>EDUCAÇÃO</b>
+    </label>
+
+    <label>
+        <input type="checkbox">
+        <span></span>
+        <b>ESPORTES</b>
+    </label>
+
+
+    
+</body>
+</html>
