@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .gridcont{
+           
+            width: 90%;
+            background-color: blue;
+           
+            display: grid;
+            grid-gap: 30px 10px;
+            grid-template-columns: repeat(3, 1fr)  ;
+            grid-template-rows: 100px 50px 1fr 100px ;
+            grid-template-areas: "header header header"
+                                  "nav nav aside"
+                                  "main main aside"
+                                  "footer footer aside";
+        }
+        .griditem{
+            background-color: black;
+           
+            color: yellow;
+            
+
+        }
+        header{
+            grid-area: header;
+        }
+        nav{
+            grid-area: nav;
+        }
+        main{
+            grid-area: main;
+            min-height: 200px;
+            background-color: blue;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="gridcont">
+        <header class="griditem">header</header>
+        <nav class="griditem">nav</nav>
+        <main class="griditem">main</main>
+        <aside class="griditem">aside</aside>
+        <footer class="griditem">footer</footer>
+        
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
