@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gridcont{
+            width: 90%;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fill, minmax(50px, 100px, 1fr,100px,100px));
+            grid-auto-rows: 300px;
+            grid-template-areas: "header header header"
+            "nav nav aside"
+            "main main aside"
+            "footer footer aside";
+        }
+        .griditem{
+           
+            color: white;
+            
+            
+        }
+        .navg{
+            display: flex;
+            justify-content: flex-end;
+            gap: 2px;
+            text-align: right;
+            
+           
+           
+        }
+        .navg li{
+            list-style-type: none;
+        }
+        header{
+            grid-area: header;
+            background-color: aqua;
+        }
+        nav{
+            grid-area: nav;
+            background-color: rgba(0, 0, 255, 0.507);
+        }
+        aside{
+            grid-area: aside;
+            background-color: brown;
+            
+        }
+        footer{
+            grid-area: footer;
+            background-color: green;
+           
+        }
+        main{
+            grid-area: main;
+            min-height: 300px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="gridcont">
+    <header class="griditem">
+       
+       
+    </header>
+    
+    <nav class="griditem">
+        <ul class="navg">
+            <li>Inico</li>
+            <li>Contato</li>
+            <li>Sac</li>
+        </ul>
+
+    </nav>
+    <main class="griditem">3
+        <p><time>time 19 hrs</time></p>
+
+    </main>
+    <aside class="griditem">4
+
+    </aside>
+    <footer class="griditem">4
+
+    </footer>
+    </div>
+    
+</body>
+</html>
