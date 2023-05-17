@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaçoes</title>
+    <style>
+        @keyframes pulse {
+            0%{
+                transform: translateX(0);
+               
+                
+
+            }
+            20%{
+                color: red;
+                transform:rotate(-20deg);
+                transform: translateY(10px);
+               
+            }
+            60%{
+                transform:rotate(-50deg);
+                color:green;
+            }
+            100%{
+                transform: translateX(150px);
+                
+               
+                color: aqua;
+            }
+        }
+        h1{
+            animation: pulse; /*nome da animação*/
+            animation-duration: 3s; /*duração da animação*/
+            animation-iteration-count: 3; /*interação da animação posso botar quantas vezes ela vai animar*/
+            animation-timing-function: ease-in-out; /*para dizer se vai ser leve rapido ou brusco*/
+            animation-direction: alternate; /*direção da animação*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>PULSA</h1>
+
+    
+</body>
+</html>
