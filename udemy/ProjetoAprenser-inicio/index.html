@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylos/normalize.css">
+    <link rel="stylesheet" href="stylos/style.css">
     <title>Projeto aprenser</title>
 </head>
 <body>
@@ -12,8 +17,8 @@
         <header class="header container">
 
             <img src="imagens/logoAprenser.png" alt="logoAprenser">
-            <nav class="header_nav">
-                <ul>
+            <nav>
+                <ul  class="header_nav">
                     <li><a href="#cursos">Cursos</a></li>
                     <li><a href="#Escola">Nossa Escola</a></li>
                     <li><a href="#contato">Contatos</a></li>
@@ -25,8 +30,10 @@
     <div class="wrapperContainer-hero">
 
         <section class="container herobaner">
-            <h1>O saber é o que transforma nosso SER</h1>
-            <a href="#" class="btn">Saiba Mais</a>
+            <div class="header_contet">
+                <h1>O saber é o que transforma nosso <span class="upper">ser</span></h1>
+                <a href="#" class="btn">Saiba Mais</a>
+            </div>
             <img src="imagens/HeroImage.png" alt="Mulher com flores">
         </section>
     </div>
@@ -89,7 +96,7 @@
         </address>
     
     </div>
-    <div class="wrapperContainer-dark">
+    <div class="wrapperContainer-Dark">
         <footer>Desenvolvido por<a href="https://www.instagram.com/douglas_1.23/"> Douglas</a></footer>
     </div>
 
