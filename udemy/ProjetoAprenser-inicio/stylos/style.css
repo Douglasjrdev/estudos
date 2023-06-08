@@ -34,7 +34,7 @@ nav a{
     
 }
 .btn{
-    background-color: var(--cor-primaria);
+    background-color:goldenrod;
     border-radius: 5px;
     font-size: 1.8rem;
     text-decoration: none;
@@ -162,5 +162,14 @@ address{
     padding:2rem 0 2rem ;
     font-family: 'inter' sans-serif;
     font-weight: 400;
+}
+footer{
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1.5rem;
+}
+footer a{
+   
+    color: #fed001;
 }
 
