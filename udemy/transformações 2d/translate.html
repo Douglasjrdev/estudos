@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        body{
+            margin-bottom: 100vh;
+        }
+        div{
+            outline: 1px solid #888;
+            width: 80%;
+            margin: .5em auto;
+        }
+        p{
+            padding: 5px;
+            width: 50%;
+        }
+        .destaque{
+            background-color: yellowgreen;
+        }
+
+        .div1 .destaque{
+            transform: translateX(50px);
+        }
+        /*ROTAÇÃO*/
+        .div2 .destaque{
+            transform: rotate(45deg);
+
+        }
+
+        /*Scale*/
+
+        .div3 .destaque{
+            transform:scale(1.4);
+
+        }
+        .div3 .dst{
+            transform:scale(.5);
+            background-color: yellow;
+
+        }
+
+        /*Skew*/
+        .div4 .destaque{
+            transform:SkewX(15deg);
+            margin-bottom: 50px;
+
+        }
+        .div4 .dst{
+            transform:SkewY(20deg);
+            background-color: yellow;
+
+        }
+        /*Transformações multiplas. a ordem importa*/
+
+
+        .div5 .destaque{
+            transform:translate(150px) rotate(45deg);
+            margin-bottom: 50px;
+
+        }
+        .div5 .dst{
+            transform:rotate(45deg) translate(150px);
+            background-color: yellow;
+
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+    </div>
+
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+    </div>
+
+    <div class="div3">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+        <p class="dst">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+    </div>
+
+    <div class="div4">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+        <p class="dst">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+    </div>
+
+    <div class="div5">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+        <p class="dst">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, deleniti.</p>
+    </div>
+    
+</body>
+</html>
