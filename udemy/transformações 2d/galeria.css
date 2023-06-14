@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html{
+    background-color: rgb(144, 164, 164);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+    flex-direction: column;
+    
+}
+.galeria{
+    margin: auto;
+    width: 60rem;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap:.5em;
+   
+    
+   
+}
+.galeria img{
+   max-width: 100%;
+
+
+}
