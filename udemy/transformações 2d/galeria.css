@@ -10,6 +10,7 @@ html{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    gap: 2em;
    
     flex-direction: column;
     
@@ -21,12 +22,43 @@ html{
     display: flex;
     flex-wrap: wrap;
     gap:.5em;
+    justify-content: space-between;
+    padding: .5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
    
     
    
 }
+.galeria .image{
+    flex-basis: calc(25% - .5em);
+    position: relative;
+    overflow: hidden;
+}
 .galeria img{
    max-width: 100%;
+   display: block;
 
 
+}
+.image a{
+    text-decoration: none;
+}
+.galeria p{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-transform: uppercase;
+    padding: 1em;
+    letter-spacing: 2px;
+    font-size: .75em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: .2;
+    transform: translateY(100%);
+    transition: all .3s ease-in-out;
+}
+
+.image:hover p{
+    transform: translateY(0);
+    opacity: 1;
 }
