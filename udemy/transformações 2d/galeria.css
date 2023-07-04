@@ -62,3 +62,30 @@ html{
     transform: translateY(0);
     opacity: 1;
 }
+.image img{
+    transform: scale(1);
+    transition: transform .5s ease-in-out;
+    
+}
+.image:hover img{
+    transform: scale(1.1);
+    
+}
+.image::after{
+    content: "";
+    position: absolute;
+    /* posso usar o "inset"
+     bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0; */
+    inset: 0;
+    background-color: rgb(254, 254, 254);
+   opacity: .5;
+   pointer-events: none;
+    
+}
+.image:hover::after{
+    opacity: 0;
+   
+}
