@@ -9,6 +9,7 @@ html{
     font-size: 62.5%;
 }
 body{
+    line-height: 1.7;
     display: flex; 
     margin: 0;
     color: #d7d6d6;
@@ -16,6 +17,18 @@ body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     min-height: 100vh;
    
+}
+
+h1{
+    font-size: 4rem;
+    margin-top:2rem ;
+    margin-bottom: 3rem;
+}
+h2, h3, h4, h5, h6{
+    color: var(--primary-color);
+}
+.under{
+    text-decoration: red wavy underline;
 }
 
 
@@ -26,6 +39,7 @@ body{
 .main{
     flex: 1 0;
     background-color:var(--secundary-color-ligth);
+    padding: 6.5rem 6rem 7.5rem;
 }
 a{
     color: inherit;
