@@ -27,6 +27,15 @@ h1{
 h2, h3, h4, h5, h6{
     color: var(--primary-color);
 }
+.hightlight{
+    border-left: 1px solid var(--primary-color);
+    font-size: 1.1em;
+    padding-left: 2em;
+    margin-bottom: 2.2em;
+}
+article{
+    padding: 1em 0;
+}
 .under{
     text-decoration: red wavy underline;
 }
@@ -65,7 +74,7 @@ a{
     transition: padding-right .8s background-color .8s ease-in-out;
     background-color: transparent;
 }
-.main-nav ul a:hover{
+.main-nav ul a:hover, .main-nav ul a:focus{
     background-color: var(--secundary-color-ligth);
     padding-right: 2rem;
 }
