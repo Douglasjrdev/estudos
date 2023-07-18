@@ -1,0 +1,16 @@
+
+:root{
+    --primary:red;
+    --color: color-mix(in srgb, var(--primary), transparent);
+}
+
+body{
+    text-align: center;
+}
+p{
+ 
+    width: 80%;
+    border: 8px dashed var(--color);
+    margin: 20px auto;
+    padding: 20px;
+}
