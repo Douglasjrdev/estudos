@@ -7,11 +7,20 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+h3{
+    color: gold;
+    text-transform: uppercase;
+    margin: 10px 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    width: 120px;
+
+}
 
 
 body{
     min-height: 100vh;
-    background: url('img/pexels-juçanã-girardi-maximiliano-14921365.jpg');
+    background: url('img/pexels-karl-solano-2780762.jpg');
       
     background-position: ;
     background-repeat: no-repeat;
@@ -66,27 +75,67 @@ body{
 }
 .active{
     border-bottom: 2px solid yellow;
+    pointer-events: none;
 }
 
 .box-center{
     position: relative;
-    top: 200px;
+    top: 80px;
+    /* background-color: aqua; */
 
-    left: 100px;
-    border: 1px solid rgb(26, 168, 173);
+    left: 150px;
+    /* border: 1px solid rgb(26, 168, 173); */
    /* display: flex;
    justify-content: center;
    align-items: center; */
-    width: 600px;
-    height: 600px;
+    width: 80%;
+    height: 510px;
 }
 .plains{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
    
 }
 article{
-    background-color: brown;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    width: 30%;
+    height: 70vh;
+    background-color:transparent;
+    border: 2px solid rgba(255,255, 255, .2);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+}
+article ul{
+    flex:1;
+}
+article li{
+    padding-left: 30px;
+    color: white;
+    list-style-position: inside;
+    line-height: 50px;
+    
+   
+}
+article li::marker{
+    color: gold;
+}
+.btn{
+    text-decoration: none;
+    background-color: rgb(221, 217, 6);
+   width: 60%;
+   padding: 10px;
+   border-radius: 10px;
+   color: rgb(0, 0, 0);
+   padding-left: 5px;
+}
+.btn-box{
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 20px;
+
 }
