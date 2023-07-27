@@ -1,33 +1,89 @@
 @charset "UTF-8";
 
-body{
-    min-height: 100vh;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
-    background-color: rgba(5, 165, 144, 0.678);
+}
+body{
+  
+ 
+  
+    
+}
+main{
+    background: url('img/academia.jpg');
+    height: 85vh;    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.title{
+    
+}
+.main-header{
+    max-height: 100px;
+    background-color: rgb(248, 188, 24);
+   
+}
+.main-nav ul{
+    text-align: right;
+    padding-top: 0;
+    padding-bottom: 20px;
+    
+}
+.strong{
+    text-transform: uppercase;
+}
+.destaque{
+    color: rgb(248, 188, 24);
+    font-weight: 800;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
    
-}
-header li{
+   
+    
+    
+
+.main-nav li{
     display: inline-block;
     margin: 5px;
-    background-color: brown;
-    padding: 5px;
+    padding: .5em;
+    border: 1px solid white;
+ 
+  
+    
+
 }
-.container{
-    height: 80%;
-    display: flex;
-    justify-content: space-around;
+
+
+.sec-main{
+    min-height: 80vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+
    
+  
+ 
 }
-.container img{
-    width: 60%;
-    border-radius: 50%;
+.center{
+    text-align: center;
 }
-.sc1{
-   
+.center p{
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+    width: 350px;
+    transform: skew(-15deg);
+    padding: 15px;
+    line-height: 20px;
+    
 }
+
+  
+
