@@ -1,20 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-}
-h3{
-    color: gold;
-    text-transform: uppercase;
-    margin: 10px 15px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid white;
-    width: 120px;
-
 }
 
 
@@ -77,67 +67,27 @@ body{
     border-bottom: 2px solid yellow;
     pointer-events: none;
 }
-
-.box-center{
+.red-box{
     position: relative;
-    top: 80px;
-    /* background-color: aqua; */
-
-    left: 150px;
-    /* border: 1px solid rgb(26, 168, 173); */
-   /* display: flex;
-   justify-content: center;
-   align-items: center; */
-    width: 80%;
-    height: 510px;
-}
-.plains{
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
-}
-article{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 5px;
-    width: 30%;
-    height: 70vh;
+    top: 250px;
     background-color:transparent;
     border: 2px solid rgba(255,255, 255, .2);
     backdrop-filter: blur(2px);
     border-radius: 10px;
-}
-article ul{
-    flex:1;
-}
-article li{
-    padding-left: 30px;
-    color: white;
-    list-style-position: inside;
-    line-height: 50px;
-    
-   
-}
-article li::marker{
-    color: gold;
-}
-.btn{
-    text-decoration: none;
-    background-color: rgb(221, 217, 6);
-   width: 60%;
-   padding: 10px;
-   border-radius: 10px;
-   color: rgb(0, 0, 0);
-   padding-left: 5px;
-}
-.btn-box{
-    margin: 0;
-    padding-left: 15px;
-    padding-bottom: 20px;
+    width: 500px;
 
+    left: 150px;
+}
+.red-box h3{
+    color: white;
+}
+.redes{
+   
+    font-size: 52px;
+    margin-top: 50px;
+}
+.redes a{
+    color: gold;
 }
 .strong{
     text-transform: uppercase;
