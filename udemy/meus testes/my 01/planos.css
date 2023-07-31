@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+h3{
+    color: gold;
+    text-transform: uppercase;
+    margin: 10px 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    width: 120px;
+
+}
+
+
+body{
+    min-height: 100vh;
+    background: url('img/pexels-karl-solano-2780762.jpg');
+      
+    background-position: ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+   
+   
+}
+.logo{
+    font-size: 32px;
+    color: rgb(248, 188, 24);
+    text-decoration: none;
+    font-weight: 700;
+}
+.main-nav a{
+    position: relative;
+    font-size: 18px;
+    color: #ffff;
+    font-weight: 500;
+    margin-left: 40px;
+    text-decoration: none;
+
+}
+.main-nav a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: .3s;
+}
+.main-nav a:hover::before{
+    width: 100%;
+}
+.active{
+    border-bottom: 2px solid yellow;
+    pointer-events: none;
+}
+
+.box-center{
+    position: relative;
+    top: 80px;
+    /* background-color: aqua; */
+
+    left: 150px;
+    /* border: 1px solid rgb(26, 168, 173); */
+   /* display: flex;
+   justify-content: center;
+   align-items: center; */
+    width: 80%;
+    height: 510px;
+}
+.plains{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+article{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    width: 30%;
+    height: 70vh;
+    background-color:transparent;
+    border: 2px solid rgba(255,255, 255, .2);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+}
+article ul{
+    flex:1;
+}
+article li{
+    padding-left: 30px;
+    color: white;
+    list-style-position: inside;
+    line-height: 50px;
+    
+   
+}
+article li::marker{
+    color: gold;
+}
+.btn{
+    text-decoration: none;
+    background-color: rgb(221, 217, 6);
+   width: 60%;
+   padding: 10px;
+   border-radius: 10px;
+   color: rgb(0, 0, 0);
+   padding-left: 5px;
+}
+.btn-box{
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 20px;
+
+}
+.strong{
+    text-transform: uppercase;
+}

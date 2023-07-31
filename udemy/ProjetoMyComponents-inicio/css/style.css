@@ -83,3 +83,31 @@ a{
     padding: .4rem 0;
    
 }
+.card{
+    max-width: 740px;
+    background-color: var(--secundary-color);
+    padding: 0;
+}
+.card_content{
+    padding: .3em 1em 1em;
+}
+.card_content p, .card_title{
+    margin: 0;
+}
+.card_title{
+    margin: 0;
+}
+.card_title{
+    
+    font-size: 1.75em;
+    margin-bottom: .25em;
+}
+.card img{
+    max-width: 100%;
+}
+
+.row{
+    display: flex;
+    gap: 2rem;
+    
+}
