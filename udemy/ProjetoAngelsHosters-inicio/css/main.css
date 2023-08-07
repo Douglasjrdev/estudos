@@ -40,7 +40,7 @@ h1,h2,h3,h4,h5,h6{
 .top_nav li:hover{
     background-color: color-mix(in srgb, var(--cor-primaria), white 10%);
 }
-
+/*md*/
 @media screen and (min-width:48.75em) {
     .top_header{
         display: flex;
@@ -100,7 +100,7 @@ h1,h2,h3,h4,h5,h6{
     text-decoration: none;
     border-radius: .5em;
 }
-
+/*md*/
 @media screen and (min-width:48.75em){
     .herobanner{
         background-color: var(--cor-primaria);
@@ -114,7 +114,7 @@ h1,h2,h3,h4,h5,h6{
         margin: auto;
     }
 }
-
+/*lg*/
 @media screen and (min-width:56.25em) {
     .herobanner{
         background-image: url(../images/bg_topo_1198x670.jpg);
@@ -130,11 +130,12 @@ h1,h2,h3,h4,h5,h6{
     }
     
 }
+/*xl*/
 
 @media screen and (min-width:74em) {
     .herobanner{
-        background-image: url(../images/bg_topo_1600x1374.jpg);
-        background-blend-mode: soft-light;
+        background-image:linear-gradient(transparent, var(--cor-primaria)), url(../images/bg_topo_1600x1374.jpg);
+        
         background-position:top center;
         background-repeat: no-repeat;
 
