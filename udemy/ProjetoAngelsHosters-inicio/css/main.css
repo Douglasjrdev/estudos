@@ -73,6 +73,7 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
     background-color: #f6f6f6;
     padding: 1em;
+   
 }
 .icon_play{
     height: 5em;
@@ -125,8 +126,9 @@ h1,h2,h3,h4,h5,h6{
     }
     .herobanner .maxwidth{
         margin: initial;
-        margin-bottom: 4em;
+        margin-bottom: 5em;
         width: 75%;
+       
     }
     
 }
@@ -174,3 +176,65 @@ h1,h2,h3,h4,h5,h6{
 .middlecon p{
     line-height: 1.5em;
 }
+
+.row{
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    flex: 1 0 auto;
+    width: 100%;
+    
+}
+
+.col-sm-12{
+    width: 100%;
+}
+
+@media screen and (min-width:48.75em) {
+
+
+    .col-md-6{
+        /* width: 50%; */
+        width: calc(50% - 1rem);
+    }
+    
+}
+
+@media screen and (min-width:74em) {
+
+
+    .col-xl-3{
+        /* width: 50%; */
+        width: calc(25% - 1rem);
+    }
+    .col-xl-6{
+        width: calc(50% - 1rem);
+    }
+    
+}
+
+
+.maincon{
+    padding: 2em;
+}
+
+.maincon p{
+    line-height: 1.2;
+}
+maincon_img{
+    width: 100%;
+}
+.maincon_title{
+    text-transform: uppercase;
+    color: var(--cor-primaria);
+    font-weight: normal;
+    letter-spacing: .2em;
+    font-size: 1.25em;
+}
+
+.maincon .row{
+    row-gap: 4em;
+}
+
