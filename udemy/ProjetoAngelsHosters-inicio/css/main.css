@@ -237,4 +237,22 @@ maincon_img{
 .maincon .row{
     row-gap: 4em;
 }
+.maincon_article{
+    container: main-content / inline-size;
+}
+@container main-content (min-width: 600px) {
+    .maincont_con{
+        display:flex;
+        gap:1rem;
+    }
+    .maincon_title{
+        margin-top:0;
+    }
+
+    .maincon_img img{
+        max-height:182px
+    }
+}
+
+
 
