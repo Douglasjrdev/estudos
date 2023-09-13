@@ -18,3 +18,14 @@
 // }
 // else
 // alert("não pode")
+
+
+
+function saudacao(){
+
+
+    return "ola mundo!";
+}
+
+var s = saudacao();
+console.log(s);
