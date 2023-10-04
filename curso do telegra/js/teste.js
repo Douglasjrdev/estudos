@@ -12,4 +12,4 @@ n2 = parseInt(n2);
 
 alert('A soma entre ' + n1 + ' + ' + n2 +' é ' + (n1 + n2));
 alert('A divisão entre ' + n1 + ' / ' + n2 + ' é ' + (n1 / n2));
-alert('A subtração entre ' + n1 + ' - ' + n2 + ' é ' + (n1 / n2));
+alert('A subtração entre ' + n1 + ' - ' + n2 + ' é ' + (n1 - n2));
