@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes rgb{
+            0%{
+                
+                color:red ;
+            }
+
+            9%{
+                
+                color: orange;
+            }
+            19%{
+                color: yellow;
+            }
+            29%{
+                
+                color:green ;
+            }
+            40%{
+               
+                color:blue ;
+            }
+            50%{
+               
+                color: indigo;
+            }
+            60%{
+                
+                color:violet ;
+            }
+        }
+        .btn{
+            color: red;
+            animation: rgb;
+            animation-duration: 3s; /*duração da animação*/
+            animation-iteration-count: infinite; /*interação da animação posso botar quantas vezes ela vai animar*/
+            animation-timing-function: ease-in-out; /*para dizer se vai ser leve rapido ou brusco*/
+            animation-direction: alternate; /*direção da animação*/
+            
+
+            
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h1>LOVE U RAISSA♥</h1> <br>
+
+    <button onclick="mostrarTabuada()" class="btn">>APERTE AQUI<</button>
+    
+
+    <div id="output"></div>
+
+
+    <script>
+        var msg = '';
+
+        var output = document.querySelector('#output');
+
+
+        function mostrarTabuada(){
+
+          
+            //perguntar numero pro usuario
+            var n = ('Te amo ♥');
+
+        
+
+            //criar variavel que servirar de indice
+            var i = 1;
+
+
+            //enquanto indice <= 100
+                //concatena na variavel msg
+                while(i <= 1000){
+                    msg += n + '<br>';
+                    i++;
+                   
+                    
+                }
+                output.innerHTML = msg;
+        
+              
+               
+        }
+      
+              
+
+              
+    </script>
+   
+  
+    
+</body>
+</html>

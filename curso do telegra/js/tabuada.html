@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>logica</h1>
+    <button onclick="mostrarTabuada()">Criar Tabuada</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+
+    <div id="output"></div>
+
+
+    <script>
+        function mostrarTabuada(){
+
+            limparTabuada();
+            //perguntar numero pro usuario
+            var n = prompt('Digite um numero');
+
+            //converter numero
+            n = parseFloat(n);
+
+            //usar loop while criar variavel que servirar de indice
+            var i = 1;
+
+
+            //enquanto indice <= 100
+                //concatena na variavel msg
+                while(i <= 1000){
+                    msg += n + 'x' + i + ' = ' + (n*i) + '<br>';
+                    i++;
+                   
+                    
+                }
+                output.innerHTML = msg;
+        
+              
+               
+        }
+        function limparTabuada(){
+            msg = '';
+            output.innerHTML = msg;
+        }
+                var output = document.querySelector('#output');
+
+                var msg = '';
+
+              
+    </script>
+   
+  
+    
+</body>
+</html>
