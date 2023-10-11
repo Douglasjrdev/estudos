@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logica</title>
+    
+</head>
+<body>
+    <h1>logica</h1>
+
+    <button onclick="mostrarAreaAlert()">mostrar area num alert </button>
+    <button onclick="mostrarAreaOutput()">mostrar area no output</button>
+    <div id="output"></div>
+
+
+
+
+    <script>
+
+     
+
+        function mostrarAreaAlert(){
+
+            var largura = prompt('Digite a largura: ');
+            largura = parseFloat(largura);
+
+
+            var alutura = prompt('Digite a altura: ');
+             alutura = parseFloat(alutura); 
+
+            var area = calcularArea(largura, alutura);
+            alert('a area total é ' + area)
+
+        }
+        function mostrarAreaOutput(){
+            var largura = prompt('Digite a largura: ');
+        largura = parseFloat(largura);
+
+
+        var alutura = prompt('Digite a altura: ');
+        alutura = parseFloat(alutura);
+            var area = calcularArea(largura, alutura);
+
+            document.querySelector('#output').innerHTML = 'a area total é ' + area;
+
+        }
+        function calcularArea(l, a){
+            return l * a;
+        }
+
+
+    </script>
+   
+
+</body>
+</html>
