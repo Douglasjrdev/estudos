@@ -7,52 +7,78 @@
     <style>
         button{
             padding: 25px;
+            margin: 5px;
           
         }
     </style>
     
 </head>
 <body>
-    <button onclick="calcular('+')">+</button>  <!-- Aqui passo uma string dentro da fuction-->     
-    <button onclick="calcular('-')">-</button>
-    <button onclick="calcular('*')">*</button>
-    <button onclick="calcular('/')">/</button>
+    <button onclick="iniciarCalculo('+')">+</button>  <!-- Aqui passo uma string dentro da fuction-->     
+    <button onclick="iniciarCalculo('-')">-</button>
+    <button onclick="iniciarCalculo('*')">*</button>
+    <button onclick="iniciarCalculo('/')">/</button>
 
 
     <div id="output"></div>
 
 
     <script>
-       var n1 = prompt('digite um numero');
-        n1 =parseFloat(n1);
-        escreve();
+       var n2 = prompt('digite um numero');
+        n2 =parseFloat(n2);
+        escreve(n2);
 
-        function escreve(){
-            var output =  document.querySelector('#output');
-            output.innerHTML = n1;
+        function iniciarCalculo(simbolo){
+            var n1 = document.querySelector('#output').textContent;
+            n1 = parseFloat(n1);
+
+            var n2 = prompt('digite outro numero ')
+            n2 = parseFloat(n2)
+
+            var msg = calcular(simbolo, n1, n2)
+           
+
+            escreve(msg);
 
         }
 
-        function calcular(simbolo){ // aqui dentro da fuciont calcular chamo o parametro de simbolo  e chamo no switch
-            var n = prompt('digite outro numero');
-            n = parseFloat(n);
+        function escreve(mensagem){
+            var output =  document.querySelector('#output');
+            output.innerHTML = mensagem;
 
-            //n1 = n1 + n;
+        }
+
+        function calcular(simbolo, n1 ,n2){ // aqui dentro da fuciont calcular chamo o parametro de simbolo  e chamo no switch
+           
+            if(simbolo !== '+' && simbolo !== '-' && simbolo !== '*' && simbolo !== '/'){
+                alert('digite um simbolo valido')
+                return 0;
+            }
+            if(isNaN(n1) || isNaN(n2) ){
+                alert('apenas numero')
+                return 0;
+            }
+
+            var numeroCalculado = null;
+         
 
         switch(simbolo){ //aqui no swtich chamo o simbolo e dentro dos case chamo as string que chamei la encima quando aperto o botão
             case '+':
-                n1 += n;
+                
+                numeroCalculado = n1 + n2;
                 break
             case '-':
-                n1 -= n;
+            numeroCalculado = n1 - n2;
                 break
             case '*':
-                n1 *=n;
+            numeroCalculado = n1 * n2;
                 break
             case '/':
-                n1 /= n;
+            numeroCalculado = n1 / n2;
         }
-            escreve();
+
+        return numeroCalculado;
+           
         }
 
 
