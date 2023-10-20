@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logica de programação</title>
+</head>
+<body>
+    <div id="output"></div>
+    
+</body>
+<script>
+    var produto1 = new Object()
+    produto1.nome = 'Caneta';
+    produto1.preco = 1.50;
+    produto1.estoque = 20;
+
+    console.log(produto1)
+    
+
+    produto1.comprar = function (qtd){
+        if(!qtd){
+            qtd = 1;
+        }
+        this.estoque = this.estoque - qtd;
+        console.log(this.estoque)
+
+    }
+
+    
+</script>
+</html>

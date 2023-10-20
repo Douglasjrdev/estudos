@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array de modo literal</title>
+    
+</head>
+<body>
+    <div id="output"></div>
+   
+
+</body>
+
+<script>
+
+    var produtos = [{"nome": "caneta", "preço":2},
+                    {"nome": "lapis" , "preço":1.50},
+                    {"nome": "borracha" , "preço":0.50}];
+
+                    var msg = "";
+
+                    for(var i = 0; i < produtos.length; i++){
+                        console.log(produtos[i]);
+
+                        msg += "<h2>Produto: " + produtos[i].nome + "</h2>"
+                        msg += "<p> preço: R$: "+ produtos[i].preço + " </p>"
+                    }
+
+                    var output = document.querySelector('#output').innerHTML = msg;
+
+</script>
+</html>

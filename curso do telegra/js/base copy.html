@@ -8,24 +8,29 @@
 </head>
 <body>
     <div id="output"></div>
-   
-
+ 
 </body>
+
 <script>
-    var soma =0;
+    var dados = [{"nome":"Douglas", "Email":"doug@gmail.com"},
+                 {"nome":"Raissa", "Email":"raissa@gmail.com"},
+                 {"nome":"gloria", "Email":"gloria@gmail.com"}];
 
-    var arr = new Array(1 , 2, 3, 2, 5, 2);
-    for(var i = 0; i < arr.length; i++){
-        
+                 var msg = '';
+                 
 
-        if(!isNaN(arr[i]) && arr[i] % 2 === 0){
-            soma += arr[i]
-
-        }
-        
-    }
-    //alert('soma dos numeros pares é : ' + soma);
+                 for(var i = 0; i < dados.length; i++){
+                    msg += "<h1> nome: " + dados[i].nome + "</h1>"; 
+                    msg += "<h2> email: " + dados[i].Email + "</h2>"
+                   
+                    console.log(dados[i]);
 
 
+                 }
+
+                 
+
+   
+    var output = document.querySelector('#output').innerHTML = msg;
 </script>
 </html>
