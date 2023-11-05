@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de IMC</title>
+</head>
+<body>
+    <h1>Vamos calcular o pesinho??</h1>
+</body>
+<script>
+
+  
+    
+    
+    (function(){
+        function calcularIMC(peso, altura){
+            return peso / (altura * altura);
+
+
+        }
+
+        function classimc(imc){
+            var msg = '';
+            if(imc <= 16.9){
+                return 'Muito abaixo do peso';
+            }else if (imc <= 18.4){
+                return 'abaixo do peso'
+            }else if (imc <= 24.9){
+                return 'Normal'
+            }else if(imc <= 29.9){
+                return 'acima do peso '
+            } else if(imc <= 34.9){
+                return 'Obesidade 1'
+            }else if(imc <= 40){
+                return 'Obesidade 2'
+            }else {
+                return 'obesidade 3'
+            }
+                
+           
+
+        }
+
+        var altura = prompt('Digite sua altura');
+        var peso = prompt('Digite seu peso');
+
+        var imc = calcularIMC(peso, altura);
+        var classificação = classimc(imc);
+        alert('Sua Classificação no IMC É: ' + classificação )
+
+    })()
+    
+</script>
+</html>
