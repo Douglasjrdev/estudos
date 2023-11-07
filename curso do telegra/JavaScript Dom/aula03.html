@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <h1>DOM</h1>
+    <div id="msg"></div>
+
+    <script>
+        (function(){
+            var nome = prompt('Digite Seu Nome:');
+            document.querySelector('#msg').innerHTML = 'Seja bem vindo, <b>'  + nome + '</b>';
+        })()
+
+    </script>
+</body>
+</html>
