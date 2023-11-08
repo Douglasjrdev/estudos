@@ -7,13 +7,22 @@
 </head>
 <body>
     <h1>DOM</h1>
+    <input type="text" name="" id="txtnome" value="" placeholder="Digite Seu Nome">
+    <button type="submit" onclick="escreve()">Enviar</button><br><br>
     <div id="msg"></div>
 
     <script>
-        (function(){
-            var nome = prompt('Digite Seu Nome:');
-            document.querySelector('#msg').innerHTML = 'Seja bem vindo, <b>'  + nome + '</b>';
-        })()
+
+        var txtnome1 = document.querySelector('#txtnome')
+         
+           
+            function escreve(){
+                var nome = txtnome1.value
+                document.querySelector('#msg').innerHTML = 'Seja bem vindo, <b>'  + nome + '</b>';
+
+        
+            }
+       
 
     </script>
 </body>
