@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <h1>DOM</h1>
+    <input type="text" name="" id="txtnome" value="" placeholder="Digite Seu Nome">
+    <button type="submit" onclick="escreve()">Enviar</button><br><br>
+    <div id="msg"></div>
+
+    <script>
+
+        var txtnome1 = document.querySelector('#txtnome')
+         
+           
+            function escreve(){
+                var nome = txtnome1.value
+                document.querySelector('#msg').innerHTML = 'Seja bem vindo, <b>'  + nome + '</b>';
+
+        
+            }
+       
+
+    </script>
+</body>
+</html>
