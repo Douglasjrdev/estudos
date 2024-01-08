@@ -7,14 +7,14 @@
 </head>
 <body>
     <script>
-        var caneta = {
-            cor: 'red', mudarCor: function(cor){
-                this.cor = cor;
-            }
+       function Caneta(){
+        this.preco = 1;
+        this.cor = 'black';
+        this.mudarcor = function(cor){
+            this.cor = cor;
         }
-
-        caneta.mudarCor('green');
-        console.log(caneta)
+       }
+       var caneta1 = new Caneta();
     </script>
 </body>
 </html>
