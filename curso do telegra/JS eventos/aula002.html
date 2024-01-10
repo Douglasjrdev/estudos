@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>propagação</title>
+</head>
+<body>
+    <h1>Curso</h1>
+    <div id="d1" style="background: red; padding: 25px;">
+        texto na div
+        <span style="background: yellow;">texto na span </span>
+    </div>
+
+
+    <script>
+        document.addEventListener('click', function(evt){
+            console.log('clicou no documento')
+            console.log(evt)
+        })
+
+
+    </script>
+
+</body>
+</html>
