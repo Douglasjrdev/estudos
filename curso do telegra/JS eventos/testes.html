@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mudar cor</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="mudaCor">
+
+    </div>
+    <button id="mudar">MUDAR A COR</button>
+
+
+    <script>
+
+        var mudar = document.getElementById('mudar');
+
+        mudar.addEventListener('click', function(){
+            document.querySelector("body").setAttribute("id","red")
+        })
+
+        function mudaCor(){
+
+        }
+
+    </script>
+    
+</body>
+</html>

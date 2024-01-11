@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>curso js completo</h1>
+
+        <form action="#">
+           <label for="txtUser">Usuario</label>
+            <input type="text" name="user" id="txtUser">
+
+            <label for="txtPass">Senha</label>
+            <input type="password" name="password" id="txtPass">
+
+            <button type="button" id="btn">logar </button>
+          
+        </form>
+    </div>
+    
+
+    <script>
+
+        (function(){
+            'use strict'
+
+            var $txtUser = document.getElementById('txtUser');
+            var $txtPass = document.getElementById('txtPass');
+            var $btn = document.getElementById('btn');
+
+            $btn.addEventListener('click', function(){
+                if(!$txtUser.value || !$txtPass.value){
+                alert('Preencha todos os campos')
+            }
+
+
+            });
+
+           
+
+        })()
+
+    </script>
+
+</body>
+</html>

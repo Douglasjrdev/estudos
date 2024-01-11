@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>curso js completo</h1>
+
+        <textarea name="" id="msg" cols="30" rows="10" maxlength="100"></textarea>
+        restam <span id="resta"></span> caracteres
+    </div>
+    
+
+    <script>
+
+        (function(){
+            'use strict'
+           
+
+            var $txtMsg = document.getElementById('msg');
+            var $resta = document.getElementById('resta');
+
+            var maxima = $txtMsg.maxLength;
+
+            $resta.textContent = maxima;
+
+            $txtMsg.addEventListener('input', checkLength);
+
+            function checkLength(e){
+                
+                var numeroLetrasDigitadas = this.value.length;
+                $resta.textContent = maxima - numeroLetrasDigitadas;
+
+            }
+
+        })()
+
+    </script>
+
+</body>
+</html>
