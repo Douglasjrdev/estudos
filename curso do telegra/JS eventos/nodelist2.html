@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nodlist</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>curso js completo</h1>
+        <input type="text" name="" id="txtTask">
+        <button type="button" id="btn">Cadastrar Tarefa</button>
+
+        <ul>
+            <li>Estudar JS - DOM</li>
+            <li>Estudar eventos em js</li>
+            <li>Jogar sozinho</li>
+        </ul>
+
+        </div> 
+
+    
+
+    <script>
+
+        (function(){
+            'use strict'
+
+            var $ul = document.querySelector('ul');
+            var $txtTask = document.querySelector('#txtTask');
+            var $btn = document.querySelector('#btn');
+           
+             $btn.addEventListener('click', function(){
+                var task = '<li>' + $txtTask.value + '</li>';
+
+                $ul.innerHTML += task;
+
+                $txtTask.value = '';
+                $txtTask.focus();
+             })
+
+        })()
+
+    </script>
+
+</body>
+</html>

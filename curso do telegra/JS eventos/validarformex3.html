@@ -10,8 +10,12 @@
     <div class="container">
         <h1>curso js completo</h1>
 
-        <textarea name="" id="msg" cols="30" rows="10" maxlength="100"></textarea>
-        restam <span id="resta"></span> caracteres
+        <textarea name="" id="msg" cols="30" rows="10" maxlength="50"></textarea>
+        <div id="restaContainer" style="display: none;">
+
+            restam <span id="resta"></span> caracteres
+
+        </div> 
     </div>
     
 
@@ -23,9 +27,10 @@
 
             var $txtMsg = document.getElementById('msg');
             var $resta = document.getElementById('resta');
+            var $restaContainer = document.getElementById('restaContainer');
 
             var maxima = $txtMsg.maxLength;
-
+            $restaContainer.style.display = 'block'
             $resta.textContent = maxima;
 
             $txtMsg.addEventListener('input', checkLength);
