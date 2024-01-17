@@ -45,20 +45,39 @@
                 }
             });
 
-            for(var i = 0; i < $lis.length; i++){
-                $lis[i].addEventListener('click', toogleDone)
-            }
-            function toogleDone(){
-                this.classList.toggle('done')
-            }
-            function addTask(){
-                var task = '<li>' + $txtTask.value + '</li>';
+           $ul.addEventListener('click', function (e){
+                if(e.target.nodeName === 'LI'){
+                    //toogleDone(e.target);
+                    removeTask(e.target);
 
-                $ul.innerHTML += task;
+                }
+           })
+
+           function removeTask(li){
+            if(confirm('Excluir? \n' + li.textContent +'?')){
+              li.parentNode.removeChild(li);
+            }
+           }
+           function toogleDone(li){
+                li.classList.toggle('done')
+            }
+
+            function addTask(){
+
+                var li = document.createElement('li');
+                var text = document.createTextNode($txtTask.value);
+
+                li.appendChild(text);
+
+                $ul.appendChild(li);
 
                 $txtTask.value = '';
                 $txtTask.focus();
+
+            
             }
+
+           
         })()
 
     </script>
