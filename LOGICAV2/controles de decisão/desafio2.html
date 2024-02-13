@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="p-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO2</title>
+</head>
+<body>
+    <h1>DESAFIO 2</h1>
+
+
+    <script>
+          
+        let n1 = parseFloat(prompt('Digite um numero'));
+        let n2 = parseFloat(prompt('Digite outro numero'));
+
+        let media = (n1 + n2) / 2;
+
+        if(isNaN(n1)  || isNaN(n2)){
+            alert('Digite Apenas Numeros');
+        }
+        else if(n1 < 0 || n2 < 0 || n1 > 10 || n2 > 10){
+            alert('Digite Numero entre 0 e 10!! ');
+        }else{
+            if(media > 4 && n1 > 0 && n2 > 0){
+            alert('APROVADO!!')
+          
+         }else{
+            alert('REPROVADO 😭')
+         }
+        }
+    alert('saiu do programa')
+       
+           
+       
+    </script>
+    
+</body>
+</html>
